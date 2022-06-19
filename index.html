@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet"/>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to OpenLibrary API</h1>
+        <hr/>
+    </header>
+   
+    <section id="intro">
+        <header><h3>With our site you cans search for  books in OpenLibrary by ISBN number</h3></header>
+    </section>
+   <section id="content">
+    <div>
+        <label>Enter ISBN number below and click search</label>
+        <br/>
+        <input name="isbn" class="isbn-input" id="input_data"/>
+    </div>
+    <div>
+        <button class="search-btn" onclick="search()">Search</button>
+    </div>
+    <div class="book-info">
+        <ul>
+            <li>
+                <label>Book Info URL: </label>
+                <a id="info" href=""></a>
+            </li>
+            <li>
+                <label>Preview URL: </label>
+                <a id="preview" href=""></a>
+            </li>
+            <li>
+                <label>Thumbnail Image: </label>
+            
+                <br/>
+                <img id="thumnail" width="150" height="150" alt="no image yet" src="images/book.jpg"/>
+            </li>
+        </ul>
+
+    </div>
+    
+   </section>
+   <footer>
+    <p>Copyright (c) 2022</p>
+   </footer>
+</body>
+</html>
